@@ -1,32 +1,102 @@
 <!DOCTYPE html>
-
-<html>
-   <head>
-      <title>Timestamp Microservice | freeCodeCamp.org</title>
-      <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon"/>
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-      <link href="style.css" rel="stylesheet" type="text/css">
-   </head>
-
-   <body>
-    <h1>Timestamp Microservice</h1>
-    <hr />
-    <div class="container">
-      <h3>Example Usage:</h3>
-      <ul>
-        <li><a href="api/2015-12-25">[project url]/api/2015-12-25</a></li>
-        <li><a href="api/1451001600000">[project url]/api/1451001600000</a></li>
-      </ul>
-
-      <h3>Example Output:</h3>
-      <p>
-        <code>{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code>
-      </p>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> Unix Timestamp</title>  
+</head>
+<body>
+  
+  <div id="principal">
+    
+    <header class="header-content">
+      <nav>
+        <ul class="nav-ul">
+          
+          <li class="nav-li">
+            <a class="nav-a" href="">Início</a>
+          </li>
+          
+          <li class="nav-li">
+            <a class="nav-a" href="">O que é Unix Timestamp</a>
+          </li>
+        
+          <li class="nav-li">
+            <a class="nav-a" href="">Sobre</a>
+          </li>
+        
+        </ul>
+      </nav>
+    
+    <div class="text-img">
+      <h1>Unix Timestamp Convert</h1>
     </div>
-    <div class="footer">
-      <p>
-        By <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>
-      </p>
-    </div>
-  </body>
+    </header>
+    
+    <main class="main-content">
+      
+      <section class="content-section">
+        <article>
+          <header class="header-article">
+            
+            <h2>
+              O que é Unix Timestamp ?
+            </h2>
+          <p>
+            <br> O carimbo de data/hora unix é uma maneira de rastrear o tempo como um total de segundos em execução. Esta contagem começa na Época Unix em 1 de janeiro de 1970 em UTC. Portanto, o carimbo de data e hora unix é meramente o número de segundos entre uma data específica e a Época do Unix. 
+            
+            <br>Também deve ser ressaltado (graças aos comentários dos visitantes deste site) que este ponto no tempo tecnicamente não muda, não importa onde você esteja localizado no globo. Isso é muito útil para sistemas de computador para rastrear e classificar informações datadas em aplicativos dinâmicos e distribuídos, tanto on-line quanto no lado do cliente.
+          </p>
+          </header>
+        </article>
+      </section>
+    
+      <section class="content-section">
+        <article class="article-table">
+          
+          <table class="table">
+            <thead>
+              
+              <tr>
+                <th>Tempo Humano Legível</th>
+                <th>Seconds</th>
+              </tr>
+            
+            </thead>
+            
+            <tbody>
+              <tr>
+                <td>1 Hora</td>
+                <td>3600 Segundos</td>
+              </tr>
+
+              <tr>
+                <td>1 Dia</td>
+                <td>86400 Segundos</td>
+              </tr>
+
+              <tr>
+                <td>1 Semana</td>
+                <td>	604800 Segundos</td>
+              </tr>
+
+              <tr>
+                <td>1 Mês</td>
+                <td>2629743  Segundos</td>
+              </tr>
+
+              <tr>
+                <td>1 Ano</td>
+                <td>	31556926 Segundos</td>
+              </tr>
+            </tbody>
+          </table>
+        
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
 </html>
