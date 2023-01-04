@@ -54,47 +54,118 @@
       </section>
     
       <section class="content-section">
-        <article class="article-table">
-          
-          <table class="table">
-            <thead>
+        <div class="table-div">
+          <article class="article-table">
+            
+            <table class="table">
+              <thead>
+                
+                <tr>
+                  <th>Tempo Humano Legível</th>
+                  <th>Seconds</th>
+                </tr>
               
-              <tr>
-                <th>Tempo Humano Legível</th>
-                <th>Seconds</th>
-              </tr>
+              </thead>
+              
+              <tbody>
+                <tr>
+                  <td>1 Hora</td>
+                  <td>3600 Segundos</td>
+                </tr>
+
+                <tr>
+                  <td>1 Dia</td>
+                  <td>86400 Segundos</td>
+                </tr>
+
+                <tr>
+                  <td>1 Semana</td>
+                  <td>	604800 Segundos</td>
+                </tr>
+
+                <tr>
+                  <td>1 Mês</td>
+                  <td>2629743  Segundos</td>
+                </tr>
+
+                <tr>
+                  <td>1 Ano</td>
+                  <td>	31556926 Segundos</td>
+                </tr>
+              </tbody>
+            </table>
+          
+          </article>
+          
+          <article class="article-table">
+            <p>A época atual se traduz em:</p>
             
-            </thead>
+            <table class="table">
+              <thead>
+                
+                <tr>
+                  <th colspan="2">Data</th>
+                </tr>
+              
+              </thead>
+              
+              <tbody>
+                
+                <tr>
+                  <td>01/07/2023 @ 3:20pm</td>
+                  <td>UTF</td>
+                </tr>
+
+                <tr>
+                  <td>2023-01-07T15:20:35+00:00</td>
+                  <td>ISO 8601</td>
+                </tr>
+
+                <tr>
+                  <td>Sat, 07 Jan 2023 15:20:35 +0000</td>
+                  <td>RFC 822, 1036, 1123, 2822</td>
+                </tr>
+
+                <tr>
+                  <td>Saturday, 07-Jan-23 15:20:35 UTC</td>
+                  <td>RFC 2822</td>
+                </tr>
+
+                <tr>
+                  <td>2023-01-07T15:20:35+00:00</td>
+                  <td>RFC 3339</td>
+                </tr>
+              
+              </tbody>
+            </table>
+          </article>
+        </div>
+      </section>
+    
+      <section class="content-section">
+        <h2>Época Atual do Unix Timestamp</h2>
+        <h3>Insira o código Timestamp</h3>
+        <div class="div-time">
+          <article class="article-timestamp">
             
-            <tbody>
-              <tr>
-                <td>1 Hora</td>
-                <td>3600 Segundos</td>
-              </tr>
-
-              <tr>
-                <td>1 Dia</td>
-                <td>86400 Segundos</td>
-              </tr>
-
-              <tr>
-                <td>1 Semana</td>
-                <td>	604800 Segundos</td>
-              </tr>
-
-              <tr>
-                <td>1 Mês</td>
-                <td>2629743  Segundos</td>
-              </tr>
-
-              <tr>
-                <td>1 Ano</td>
-                <td>	31556926 Segundos</td>
-              </tr>
-            </tbody>
-          </table>
-        
-        </article>
+            <form action="" method="post">
+              <input type="number" min="0" name="timestamp" class="timestamp" placeholder="Ex:1673106348" >
+            </form>
+            <p>Suporta timestamps Unix em segundos, milissegundos, microssegundos e nanossegundos.</p>
+            <form action="" method="post">
+              <input type="button" class="button-timestamp" onclick="" value="Converter">
+            </form>
+          </article>
+        </div>
+      </section>
+      
+      <section class="content-section">
+        <h3>Insira a data e hora</h3>
+        <div class="data-timestamp">
+          <article class="data-article">
+            
+          </article>
+        </div>
       </section>
     </main>
   </div>
