@@ -15,17 +15,13 @@ app.get("/", function (req, res) {
 });
 
 
-app.get('/api/:date', function (req, res, next) {
+app.get('/api/:date', function (req, res) {
   const error = {"error": "Invalid Date"}
   const resValid = {"unix":"", "utc": ""}
   const reqDate = req.params.date
-  let unixdate = parseInt(reqDate)
-  let reqDate2 = new Date(reqDate)
+  const unixdate = parseInt(reqDate)
+  const reqDate2 = new Date(reqDate)
   
-  if(req.params.date == undefined){
-
-  }
-
   function dateIsValid(date) {
     return date instanceof Date && !isNaN(date);
   }
@@ -42,21 +38,15 @@ app.get('/api/:date', function (req, res, next) {
     res.json(resValid)
    }else{
     res.json(error)}
-   
-    //const teste = {"unix":unixTimestamp, "utc": new Date(reqDate)}
-//     const testeDate = new Date(reqDate) 
-// console.log(testeDate.valueOf())
-//   console.log(req.body)
 
-  
 })
 
 app.get('/api/', function (req, res, next) {
   const dateNow = new Date()
   res.send({"unix": dateNow.valueOf(), "utc": dateNow.toUTCString()})
 })
+console.log(new Date().toISOString())
 
-// listen for requests :)
-var listener = app.listen(port, function () {
+app.listen(port, function () {
   console.log('Your app is listening on port ' + port);
 });
