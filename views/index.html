@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <title> Unix Timestamp</title>  
 </head>
@@ -143,7 +144,7 @@
       </section>
     
       <section class="content-section">
-        <h2>Época Atual do Unix Timestamp</h2>
+        <h2 class="align-h2">Época Atual do Unix Timestamp</h2>
         <h3>Insira o código Timestamp</h3>
         <div class="div-time">
           <article class="article-timestamp">
@@ -151,7 +152,7 @@
             <form action="" method="post">
               <input type="number" min="0" name="timestamp" class="timestamp" placeholder="Ex:1673106348" >
             </form>
-            <p>Suporta timestamps Unix em segundos, milissegundos, microssegundos e nanossegundos.</p>
+            <p class="timestamp-form">Suporta timestamps Unix em segundos, milissegundos, microssegundos e nanossegundos.</p>
             <form action="" method="post">
               <input type="button" class="button-timestamp" onclick="" value="Converter">
             </form>
@@ -162,12 +163,45 @@
       <section class="content-section">
         <h3>Insira a data e hora</h3>
         <div class="data-timestamp">
-          <article class="data-article">
-            
-          </article>
+          
+          <div class="input-table">
+            <label for="year">Ano</label>
+            <input type="number" name="year" class="input-year" placeholder="YYYY" step="1" maxlength="4">
+          </div>
+        
+          <div class="input-table">
+            <label for="mes">Mês</label>
+            <input type="number" name="mes" class="input-mes" placeholder="MM" min="1" max="12" step="1" maxlength="2">
+          </div>
+
+          <div class="input-table">
+            <label for="dia">Dia</label>
+            <input type="number" name="dia" class="input-dia" placeholder="DD" min="1" max="31" step="1" maxlength="2">
+          </div>
+
+          <div class="input-table">
+            <label for="horas">Horas (24 horas)</label>
+            <input type="number" name="horas" class="input-horas" placeholder="HH" min="0" max="23" step="1" maxlength="2">
+          </div>
+
+          <div class="input-table">
+            <label for="min">Minutos</label>
+            <input type="number" name="min" class="input-min" placeholder="MM" min="0" max="59" step="1" maxlength="2">
+          </div>
+
+          <div class="input-table">
+            <label for="seg">Segundos</label>
+            <input type="number" name="seg" class="input-seg" placeholder="SS" min="0" max="59" step="1" maxlength="2">
+          </div>
         </div>
+        <input type="button" class="button-timestamp" onclick="" value="Converter ">
+        
       </section>
     </main>
+
+    <footer class="rodape">
+      Copyright &copy; 
+    </footer>
   </div>
 </body>
 </html>
