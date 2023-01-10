@@ -1,5 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #DFE0D2;
+    
 }
 
 .header-content{
@@ -61,6 +63,7 @@ body{
     padding: 20px;
     margin-left: 40px;
     margin-right: 40px;
+    background-color: white;
 }
 
 p{
@@ -102,6 +105,7 @@ h3{
 .timestamp{
     padding: 5px;
     margin-bottom: 2px;
+    border: 1px solid #DEDEDE;
 }
 
 
@@ -121,4 +125,67 @@ h3{
     border-radius: 4px;
     padding: 8px;
     font-size: 15px;
+}
+
+.input-table{
+    display: inline-block;
+}
+
+.label-input{
+    font-size: 15px ;
+}
+
+.label-ano{
+    margin-left: 10px;
+}
+
+.label-mes{
+    margin-left: 10px;
+}
+
+.label-dia{
+    margin-left: 10px;
+}
+
+.label-horas{
+    margin-left: 15px;
+}
+
+.label-min{
+    margin-left: 10px;
+}
+
+.label-seg{
+    margin-left: 10px;
+}
+
+div.data-timestamp{
+    margin-left: 100px;
+}
+
+.button-default-data{
+    margin-top: 20px;
+}
+
+.input-default{
+    padding: 5px;
+    margin-bottom: 2px;
+    border: 1px solid #DEDEDE;
+    transition: .5s;
+}
+
+.input-default:hover{
+    border: 1px solid dodgerblue;
+}
+
+.input-default:focus{
+    outline: 0;
+}
+
+.footer-time{
+    color:black;
+    text-align: center;
+    font-family:0.8em ;
+    margin: auto;
+    
 }
